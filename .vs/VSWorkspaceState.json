@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SiriBizWeb",
+    "\\SiriBizWeb\\SiriBiz.WebApp",
+    "\\SiriBizWeb\\SiriBiz.WebApp\\Pages",
+    "\\SiriBizWeb\\SiriBiz.WebApp\\Pages\\Shared",
+    "\\SiriBizWeb\\SiriBiz.WebApp\\Properties",
+    "\\SiriBizWeb\\SiriBiz.WebApp\\wwwroot",
+    "\\SiriBizWeb\\SiriBiz.WebApp\\wwwroot\\js"
+  ],
+  "SelectedNode": "\\SiriBizWeb\\SiriBiz.WebApp\\Pages\\Index.cshtml.cs",
+  "PreviewInSolutionExplorer": false
+}
