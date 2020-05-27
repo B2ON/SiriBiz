@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9T1/W7KtNUC1H02cK4Rz3QAAAAACAAAAAAAQZgAAAAEAACAAAAAzUMEbqOXzTvKiKXSMtgNCBKPzEBIQu2U08bMteMAXTgAAAAAOgAAAAAIAACAAAAAOdHbx9vuqgR0Un93GUX6ESezb/JV//BvC428zDR/M0iAAAAC1tIX3BlxxqoUdvL1861ENPFxcUMg6cGrEGz4T2HKy+UAAAABOLlhM2HN2bWdLEtUGXEGmZLeGqqJ6FlBUrOdOJkFcLqsQj1yfhgYSUu9oVqFuBH6PVUhbhAW35MRMsm+EYhtW</EncryptedPassword>
+    <_PublishTargetUrl>C:\Users\boontham\Desktop\line.siri-biz.com</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="api-ms-win-core-console-l1-1-0.dll">
+      <publishTime>04/20/2018 00:05:20</publishTime>
+    </File>
+    <File Include="api-ms-win-core-datetime-l1-1-0.dll">
+      <publishTime>04/20/2018 00:05:20</publishTime>
+    </File>
+    <File Include="api-ms-win-core-debug-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:06</publishTime>
+    </File>
+    <File Include="api-ms-win-core-errorhandling-l1-1-0.dll">
+      <publishTime>04/19/2018 23:55:58</publishTime>
+    </File>
+    <File Include="api-ms-win-core-file-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:02</publishTime>
+    </File>
+    <File Include="api-ms-win-core-file-l1-2-0.dll">
+      <publishTime>04/19/2018 23:55:58</publishTime>
+    </File>
+    <File Include="api-ms-win-core-file-l2-1-0.dll">
+      <publishTime>04/19/2018 23:55:56</publishTime>
+    </File>
+    <File Include="api-ms-win-core-handle-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:02</publishTime>
+    </File>
+    <File Include="api-ms-win-core-heap-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:06</publishTime>
+    </File>
+    <File Include="api-ms-win-core-interlocked-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:02</publishTime>
+    </File>
+    <File Include="api-ms-win-core-libraryloader-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:02</publishTime>
+    </File>
+    <File Include="api-ms-win-core-localization-l1-2-0.dll">
+      <publishTime>04/19/2018 23:56:02</publishTime>
+    </File>
+    <File Include="api-ms-win-core-memory-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:00</publishTime>
+    </File>
+    <File Include="api-ms-win-core-namedpipe-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:02</publishTime>
+    </File>
+    <File Include="api-ms-win-core-processenvironment-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:06</publishTime>
+    </File>
+    <File Include="api-ms-win-core-processthreads-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:10</publishTime>
+    </File>
+    <File Include="api-ms-win-core-processthreads-l1-1-1.dll">
+      <publishTime>04/19/2018 23:56:10</publishTime>
+    </File>
+    <File Include="api-ms-win-core-profile-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:14</publishTime>
+    </File>
+    <File Include="api-ms-win-core-rtlsupport-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:14</publishTime>
+    </File>
+    <File Include="api-ms-win-core-string-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:14</publishTime>
+    </File>
+    <File Include="api-ms-win-core-synch-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:14</publishTime>
+    </File>
+    <File Include="api-ms-win-core-synch-l1-2-0.dll">
+      <publishTime>04/19/2018 23:56:14</publishTime>
+    </File>
+    <File Include="api-ms-win-core-sysinfo-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:16</publishTime>
+    </File>
+    <File Include="api-ms-win-core-timezone-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:18</publishTime>
+    </File>
+    <File Include="api-ms-win-core-util-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:16</publishTime>
+    </File>
+    <File Include="API-MS-Win-core-xstate-l2-1-0.dll">
+      <publishTime>04/02/2020 21:23:10</publishTime>
+    </File>
+    <File Include="api-ms-win-crt-conio-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:16</publishTime>
+    </File>
+    <File Include="api-ms-win-crt-convert-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:16</publishTime>
+    </File>
+    <File Include="api-ms-win-crt-environment-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:14</publishTime>
+    </File>
+    <File Include="api-ms-win-crt-filesystem-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:18</publishTime>
+    </File>
+    <File Include="api-ms-win-crt-heap-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:16</publishTime>
+    </File>
+    <File Include="api-ms-win-crt-locale-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:20</publishTime>
+    </File>
+    <File Include="api-ms-win-crt-math-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:20</publishTime>
+    </File>
+    <File Include="api-ms-win-crt-multibyte-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:08</publishTime>
+    </File>
+    <File Include="api-ms-win-crt-private-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:08</publishTime>
+    </File>
+    <File Include="api-ms-win-crt-process-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:10</publishTime>
+    </File>
+    <File Include="api-ms-win-crt-runtime-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:12</publishTime>
+    </File>
+    <File Include="api-ms-win-crt-stdio-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:14</publishTime>
+    </File>
+    <File Include="api-ms-win-crt-string-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:14</publishTime>
+    </File>
+    <File Include="api-ms-win-crt-time-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:08</publishTime>
+    </File>
+    <File Include="api-ms-win-crt-utility-l1-1-0.dll">
+      <publishTime>04/19/2018 23:56:20</publishTime>
+    </File>
+    <File Include="appsettings.Development.json">
+      <publishTime>05/27/2020 09:28:04</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>05/27/2020 11:47:20</publishTime>
+    </File>
+    <File Include="aspnetcorev2_inprocess.dll">
+      <publishTime>04/16/2020 18:33:08</publishTime>
+    </File>
+    <File Include="clrcompression.dll">
+      <publishTime>04/14/2020 22:34:12</publishTime>
+    </File>
+    <File Include="clretwrc.dll">
+      <publishTime>04/02/2020 21:23:54</publishTime>
+    </File>
+    <File Include="clrjit.dll">
+      <publishTime>04/02/2020 21:23:32</publishTime>
+    </File>
+    <File Include="coreclr.dll">
+      <publishTime>04/02/2020 21:23:30</publishTime>
+    </File>
+    <File Include="dbgshim.dll">
+      <publishTime>04/02/2020 21:23:32</publishTime>
+    </File>
+    <File Include="dotnet-aspnet-codegenerator-design.dll">
+      <publishTime>05/12/2020 19:55:52</publishTime>
+    </File>
+    <File Include="hostfxr.dll">
+      <publishTime>04/15/2020 01:05:16</publishTime>
+    </File>
+    <File Include="hostpolicy.dll">
+      <publishTime>04/15/2020 01:05:16</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Antiforgery.dll">
+      <publishTime>04/16/2020 18:30:18</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Authentication.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:18</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Authentication.Cookies.dll">
+      <publishTime>04/16/2020 18:30:18</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Authentication.Core.dll">
+      <publishTime>04/16/2020 18:30:18</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Authentication.dll">
+      <publishTime>04/16/2020 18:30:18</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Authentication.JwtBearer.dll">
+      <publishTime>04/16/2020 17:59:26</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Authentication.OAuth.dll">
+      <publishTime>04/16/2020 18:30:18</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Authorization.dll">
+      <publishTime>04/16/2020 18:30:18</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Authorization.Policy.dll">
+      <publishTime>04/16/2020 18:30:18</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Components.Authorization.dll">
+      <publishTime>04/16/2020 18:30:18</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Components.dll">
+      <publishTime>04/16/2020 18:30:20</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Components.Forms.dll">
+      <publishTime>04/16/2020 18:30:20</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Components.Server.dll">
+      <publishTime>04/16/2020 18:30:20</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Components.Web.dll">
+      <publishTime>04/16/2020 18:30:20</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Connections.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:20</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.CookiePolicy.dll">
+      <publishTime>04/16/2020 18:30:20</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Cors.dll">
+      <publishTime>04/16/2020 18:30:20</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Cryptography.Internal.dll">
+      <publishTime>04/16/2020 18:30:22</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Cryptography.KeyDerivation.dll">
+      <publishTime>04/16/2020 18:30:22</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.DataProtection.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:22</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.DataProtection.dll">
+      <publishTime>04/16/2020 18:30:22</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.DataProtection.Extensions.dll">
+      <publishTime>04/16/2020 18:30:22</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Diagnostics.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:22</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Diagnostics.dll">
+      <publishTime>04/16/2020 18:30:22</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Diagnostics.HealthChecks.dll">
+      <publishTime>04/16/2020 18:30:22</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.dll">
+      <publishTime>04/16/2020 18:30:22</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.HostFiltering.dll">
+      <publishTime>04/16/2020 18:30:24</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Hosting.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:24</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Hosting.dll">
+      <publishTime>04/16/2020 18:30:24</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Hosting.Server.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:24</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Html.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:24</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Http.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:24</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Http.Connections.Common.dll">
+      <publishTime>04/16/2020 18:30:24</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Http.Connections.dll">
+      <publishTime>04/16/2020 18:30:24</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Http.dll">
+      <publishTime>04/16/2020 18:30:26</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Http.Extensions.dll">
+      <publishTime>04/16/2020 18:30:26</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Http.Features.dll">
+      <publishTime>04/16/2020 18:30:26</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.HttpOverrides.dll">
+      <publishTime>04/16/2020 18:30:26</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.HttpsPolicy.dll">
+      <publishTime>04/16/2020 18:30:26</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Identity.dll">
+      <publishTime>04/16/2020 18:30:26</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Localization.dll">
+      <publishTime>04/16/2020 18:30:26</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Localization.Routing.dll">
+      <publishTime>04/16/2020 18:30:26</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Metadata.dll">
+      <publishTime>04/16/2020 18:30:26</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Mvc.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:26</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Mvc.ApiExplorer.dll">
+      <publishTime>04/16/2020 18:30:28</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Mvc.Core.dll">
+      <publishTime>04/16/2020 18:30:28</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Mvc.Cors.dll">
+      <publishTime>04/16/2020 18:30:30</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Mvc.DataAnnotations.dll">
+      <publishTime>04/16/2020 18:30:30</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Mvc.dll">
+      <publishTime>04/16/2020 18:30:30</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Mvc.Formatters.Json.dll">
+      <publishTime>04/16/2020 18:30:30</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Mvc.Formatters.Xml.dll">
+      <publishTime>04/16/2020 18:30:30</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Mvc.Localization.dll">
+      <publishTime>04/16/2020 18:30:30</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Mvc.Razor.dll">
+      <publishTime>04/16/2020 18:30:30</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Mvc.RazorPages.dll">
+      <publishTime>04/16/2020 18:30:30</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Mvc.TagHelpers.dll">
+      <publishTime>04/16/2020 18:30:32</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Mvc.ViewFeatures.dll">
+      <publishTime>04/16/2020 18:30:32</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Razor.dll">
+      <publishTime>04/16/2020 18:30:32</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Razor.Language.dll">
+      <publishTime>11/16/2019 06:08:46</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Razor.Runtime.dll">
+      <publishTime>04/16/2020 18:30:32</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.ResponseCaching.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:32</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.ResponseCaching.dll">
+      <publishTime>04/16/2020 18:30:32</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.ResponseCompression.dll">
+      <publishTime>04/16/2020 18:30:32</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Rewrite.dll">
+      <publishTime>04/16/2020 18:30:34</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Routing.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:34</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Routing.dll">
+      <publishTime>04/16/2020 18:30:34</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Server.HttpSys.dll">
+      <publishTime>04/16/2020 18:30:34</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Server.IIS.dll">
+      <publishTime>04/16/2020 18:30:34</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Server.IISIntegration.dll">
+      <publishTime>04/16/2020 18:30:36</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Server.Kestrel.Core.dll">
+      <publishTime>04/16/2020 18:30:36</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Server.Kestrel.dll">
+      <publishTime>04/16/2020 18:30:36</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll">
+      <publishTime>04/16/2020 18:30:36</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Session.dll">
+      <publishTime>04/16/2020 18:30:36</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.SignalR.Common.dll">
+      <publishTime>04/16/2020 18:30:38</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.SignalR.Core.dll">
+      <publishTime>04/16/2020 18:30:38</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.SignalR.dll">
+      <publishTime>04/16/2020 18:30:38</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.SignalR.Protocols.Json.dll">
+      <publishTime>04/16/2020 18:30:38</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.StaticFiles.dll">
+      <publishTime>04/16/2020 18:30:38</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.WebSockets.dll">
+      <publishTime>04/16/2020 18:30:38</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.WebUtilities.dll">
+      <publishTime>04/16/2020 18:30:38</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>09/12/2019 17:08:58</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.Workspaces.dll">
+      <publishTime>09/12/2019 17:09:12</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.dll">
+      <publishTime>09/12/2019 17:07:46</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Razor.dll">
+      <publishTime>11/16/2019 06:08:52</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Workspaces.dll">
+      <publishTime>09/12/2019 17:08:34</publishTime>
+    </File>
+    <File Include="Microsoft.CSharp.dll">
+      <publishTime>04/15/2020 01:04:44</publishTime>
+    </File>
+    <File Include="Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>12/04/2017 17:36:44</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Caching.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:04</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Caching.Memory.dll">
+      <publishTime>04/16/2020 18:30:04</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:06</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.Binder.dll">
+      <publishTime>04/16/2020 18:30:06</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.CommandLine.dll">
+      <publishTime>04/16/2020 18:30:06</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.dll">
+      <publishTime>04/16/2020 18:30:04</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.EnvironmentVariables.dll">
+      <publishTime>04/16/2020 18:30:06</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.FileExtensions.dll">
+      <publishTime>04/16/2020 18:30:06</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.Ini.dll">
+      <publishTime>04/16/2020 18:30:06</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.Json.dll">
+      <publishTime>04/16/2020 18:30:06</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.KeyPerFile.dll">
+      <publishTime>04/16/2020 18:30:06</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.UserSecrets.dll">
+      <publishTime>04/16/2020 18:30:06</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.Xml.dll">
+      <publishTime>04/16/2020 18:30:06</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:08</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.dll">
+      <publishTime>04/16/2020 18:30:08</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:08</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Diagnostics.HealthChecks.dll">
+      <publishTime>04/16/2020 18:30:08</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.FileProviders.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:08</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.FileProviders.Composite.dll">
+      <publishTime>04/16/2020 18:30:08</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.FileProviders.Embedded.dll">
+      <publishTime>04/16/2020 18:30:08</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.FileProviders.Physical.dll">
+      <publishTime>04/16/2020 18:30:08</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.FileSystemGlobbing.dll">
+      <publishTime>04/16/2020 18:30:10</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Hosting.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:10</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Hosting.dll">
+      <publishTime>04/16/2020 18:30:10</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Http.dll">
+      <publishTime>04/16/2020 18:30:10</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Identity.Core.dll">
+      <publishTime>04/16/2020 18:30:38</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Identity.Stores.dll">
+      <publishTime>04/16/2020 18:30:40</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Localization.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:10</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Localization.dll">
+      <publishTime>04/16/2020 18:30:10</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.Abstractions.dll">
+      <publishTime>04/16/2020 18:30:10</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.Configuration.dll">
+      <publishTime>04/16/2020 18:30:10</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.Console.dll">
+      <publishTime>04/16/2020 18:30:10</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.Debug.dll">
+      <publishTime>04/16/2020 18:30:12</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.dll">
+      <publishTime>04/16/2020 18:30:10</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.EventLog.dll">
+      <publishTime>04/16/2020 18:30:12</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.EventSource.dll">
+      <publishTime>04/16/2020 18:30:12</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.TraceSource.dll">
+      <publishTime>04/16/2020 18:30:12</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.ObjectPool.dll">
+      <publishTime>04/16/2020 18:30:12</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Options.ConfigurationExtensions.dll">
+      <publishTime>04/16/2020 18:30:12</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Options.DataAnnotations.dll">
+      <publishTime>04/16/2020 18:30:12</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Options.dll">
+      <publishTime>04/16/2020 18:30:12</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Primitives.dll">
+      <publishTime>04/16/2020 18:30:12</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.WebEncoders.dll">
+      <publishTime>04/16/2020 18:30:14</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.JsonWebTokens.dll">
+      <publishTime>06/24/2019 19:50:38</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Logging.dll">
+      <publishTime>06/24/2019 19:53:26</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.dll">
+      <publishTime>06/24/2019 19:54:24</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.OpenIdConnect.dll">
+      <publishTime>06/24/2019 19:59:32</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Tokens.dll">
+      <publishTime>06/24/2019 19:56:06</publishTime>
+    </File>
+    <File Include="Microsoft.JSInterop.dll">
+      <publishTime>04/16/2020 18:30:14</publishTime>
+    </File>
+    <File Include="Microsoft.Net.Http.Headers.dll">
+      <publishTime>04/16/2020 18:30:40</publishTime>
+    </File>
+    <File Include="Microsoft.VisualBasic.Core.dll">
+      <publishTime>04/15/2020 01:04:42</publishTime>
+    </File>
+    <File Include="Microsoft.VisualBasic.dll">
+      <publishTime>04/15/2020 01:04:42</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll">
+      <publishTime>05/12/2020 19:55:36</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Core.dll">
+      <publishTime>05/12/2020 19:55:42</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.dll">
+      <publishTime>05/12/2020 19:55:46</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll">
+      <publishTime>05/12/2020 19:55:44</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll">
+      <publishTime>05/12/2020 19:55:40</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll">
+      <publishTime>05/12/2020 19:55:38</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll">
+      <publishTime>05/12/2020 19:55:48</publishTime>
+    </File>
+    <File Include="Microsoft.Win32.Primitives.dll">
+      <publishTime>04/15/2020 01:04:42</publishTime>
+    </File>
+    <File Include="Microsoft.Win32.Registry.dll">
+      <publishTime>04/15/2020 01:04:42</publishTime>
+    </File>
+    <File Include="Microsoft.Win32.SystemEvents.dll">
+      <publishTime>04/16/2020 18:30:14</publishTime>
+    </File>
+    <File Include="mscordaccore.dll">
+      <publishTime>04/02/2020 21:23:44</publishTime>
+    </File>
+    <File Include="mscordaccore_x86_x86_4.700.20.20201.dll">
+      <publishTime>04/02/2020 21:23:44</publishTime>
+    </File>
+    <File Include="mscordbi.dll">
+      <publishTime>04/02/2020 21:23:34</publishTime>
+    </File>
+    <File Include="mscorlib.dll">
+      <publishTime>04/14/2020 22:40:56</publishTime>
+    </File>
+    <File Include="mscorrc.debug.dll">
+      <publishTime>04/02/2020 21:23:54</publishTime>
+    </File>
+    <File Include="mscorrc.dll">
+      <publishTime>04/02/2020 21:23:30</publishTime>
+    </File>
+    <File Include="netstandard.dll">
+      <publishTime>04/15/2020 01:04:42</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.dll">
+      <publishTime>05/28/2019 09:45:07</publishTime>
+    </File>
+    <File Include="NuGet.Frameworks.dll">
+      <publishTime>05/28/2019 09:43:20</publishTime>
+    </File>
+    <File Include="SiriBiz.LineHook.deps.json">
+      <publishTime>05/27/2020 12:36:12</publishTime>
+    </File>
+    <File Include="SiriBiz.LineHook.dll">
+      <publishTime>05/27/2020 12:36:09</publishTime>
+    </File>
+    <File Include="SiriBiz.LineHook.pdb">
+      <publishTime>05/27/2020 12:36:09</publishTime>
+    </File>
+    <File Include="SiriBiz.LineHook.runtimeconfig.json">
+      <publishTime>05/27/2020 12:36:12</publishTime>
+    </File>
+    <File Include="SOS_README.md">
+      <publishTime>04/02/2020 21:01:28</publishTime>
+    </File>
+    <File Include="System.AppContext.dll">
+      <publishTime>04/15/2020 01:04:22</publishTime>
+    </File>
+    <File Include="System.Buffers.dll">
+      <publishTime>04/15/2020 01:04:22</publishTime>
+    </File>
+    <File Include="System.Collections.Concurrent.dll">
+      <publishTime>04/15/2020 01:04:42</publishTime>
+    </File>
+    <File Include="System.Collections.dll">
+      <publishTime>04/15/2020 01:04:42</publishTime>
+    </File>
+    <File Include="System.Collections.Immutable.dll">
+      <publishTime>04/15/2020 01:04:42</publishTime>
+    </File>
+    <File Include="System.Collections.NonGeneric.dll">
+      <publishTime>04/15/2020 01:04:42</publishTime>
+    </File>
+    <File Include="System.Collections.Specialized.dll">
+      <publishTime>04/15/2020 01:04:44</publishTime>
+    </File>
+    <File Include="System.ComponentModel.Annotations.dll">
+      <publishTime>04/15/2020 01:04:44</publishTime>
+    </File>
+    <File Include="System.ComponentModel.DataAnnotations.dll">
+      <publishTime>04/15/2020 01:04:46</publishTime>
+    </File>
+    <File Include="System.ComponentModel.dll">
+      <publishTime>04/15/2020 01:04:44</publishTime>
+    </File>
+    <File Include="System.ComponentModel.EventBasedAsync.dll">
+      <publishTime>04/15/2020 01:04:22</publishTime>
+    </File>
+    <File Include="System.ComponentModel.Primitives.dll">
+      <publishTime>04/15/2020 01:04:46</publishTime>
+    </File>
+    <File Include="System.ComponentModel.TypeConverter.dll">
+      <publishTime>04/15/2020 01:04:44</publishTime>
+    </File>
+    <File Include="System.Composition.AttributedModel.dll">
+      <publishTime>05/28/2019 09:43:26</publishTime>
+    </File>
+    <File Include="System.Composition.Convention.dll">
+      <publishTime>05/28/2019 09:43:29</publishTime>
+    </File>
+    <File Include="System.Composition.Hosting.dll">
+      <publishTime>05/28/2019 09:43:36</publishTime>
+    </File>
+    <File Include="System.Composition.Runtime.dll">
+      <publishTime>05/28/2019 09:43:38</publishTime>
+    </File>
+    <File Include="System.Composition.TypedParts.dll">
+      <publishTime>05/28/2019 09:43:39</publishTime>
+    </File>
+    <File Include="System.Configuration.dll">
+      <publishTime>04/15/2020 01:04:44</publishTime>
+    </File>
+    <File Include="System.Console.dll">
+      <publishTime>04/15/2020 01:04:52</publishTime>
+    </File>
+    <File Include="System.Core.dll">
+      <publishTime>04/15/2020 01:04:22</publishTime>
+    </File>
+    <File Include="System.Data.Common.dll">
+      <publishTime>04/15/2020 01:04:48</publishTime>
+    </File>
+    <File Include="System.Data.DataSetExtensions.dll">
+      <publishTime>04/15/2020 01:04:48</publishTime>
+    </File>
+    <File Include="System.Data.dll">
+      <publishTime>04/15/2020 01:04:44</publishTime>
+    </File>
+    <File Include="System.Diagnostics.Contracts.dll">
+      <publishTime>04/15/2020 01:04:44</publishTime>
+    </File>
+    <File Include="System.Diagnostics.Debug.dll">
+      <publishTime>04/15/2020 01:04:44</publishTime>
+    </File>
+    <File Include="System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>04/15/2020 01:04:44</publishTime>
+    </File>
+    <File Include="System.Diagnostics.EventLog.dll">
+      <publishTime>04/16/2020 18:30:14</publishTime>
+    </File>
+    <File Include="System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>04/15/2020 01:04:46</publishTime>
+    </File>
+    <File Include="System.Diagnostics.Process.dll">
+      <publishTime>04/15/2020 01:04:46</publishTime>
+    </File>
+    <File Include="System.Diagnostics.StackTrace.dll">
+      <publishTime>04/15/2020 01:04:46</publishTime>
+    </File>
+    <File Include="System.Diagnostics.TextWriterTraceListener.dll">
+      <publishTime>04/15/2020 01:04:46</publishTime>
+    </File>
+    <File Include="System.Diagnostics.Tools.dll">
+      <publishTime>04/15/2020 01:04:22</publishTime>
+    </File>
+    <File Include="System.Diagnostics.TraceSource.dll">
+      <publishTime>04/15/2020 01:04:48</publishTime>
+    </File>
+    <File Include="System.Diagnostics.Tracing.dll">
+      <publishTime>04/15/2020 01:04:46</publishTime>
+    </File>
+    <File Include="System.dll">
+      <publishTime>04/15/2020 01:04:50</publishTime>
+    </File>
+    <File Include="System.Drawing.Common.dll">
+      <publishTime>04/16/2020 18:30:14</publishTime>
+    </File>
+    <File Include="System.Drawing.dll">
+      <publishTime>04/15/2020 01:04:46</publishTime>
+    </File>
+    <File Include="System.Drawing.Primitives.dll">
+      <publishTime>04/15/2020 01:04:48</publishTime>
+    </File>
+    <File Include="System.Dynamic.Runtime.dll">
+      <publishTime>04/15/2020 01:04:48</publishTime>
+    </File>
+    <File Include="System.Globalization.Calendars.dll">
+      <publishTime>04/15/2020 01:04:50</publishTime>
+    </File>
+    <File Include="System.Globalization.dll">
+      <publishTime>04/15/2020 01:04:48</publishTime>
+    </File>
+    <File Include="System.Globalization.Extensions.dll">
+      <publishTime>04/15/2020 01:04:48</publishTime>
+    </File>
+    <File Include="System.IdentityModel.Tokens.Jwt.dll">
+      <publishTime>06/24/2019 19:49:50</publishTime>
+    </File>
+    <File Include="System.IO.Compression.Brotli.dll">
+      <publishTime>04/15/2020 01:04:48</publishTime>
+    </File>
+    <File Include="System.IO.Compression.dll">
+      <publishTime>04/15/2020 01:04:50</publishTime>
+    </File>
+    <File Include="System.IO.Compression.FileSystem.dll">
+      <publishTime>04/15/2020 01:04:48</publishTime>
+    </File>
+    <File Include="System.IO.Compression.ZipFile.dll">
+      <publishTime>04/15/2020 01:04:48</publishTime>
+    </File>
+    <File Include="System.IO.dll">
+      <publishTime>04/15/2020 01:04:48</publishTime>
+    </File>
+    <File Include="System.IO.FileSystem.AccessControl.dll">
+      <publishTime>04/15/2020 01:04:54</publishTime>
+    </File>
+    <File Include="System.IO.FileSystem.dll">
+      <publishTime>04/15/2020 01:04:52</publishTime>
+    </File>
+    <File Include="System.IO.FileSystem.DriveInfo.dll">
+      <publishTime>04/15/2020 01:04:50</publishTime>
+    </File>
+    <File Include="System.IO.FileSystem.Primitives.dll">
+      <publishTime>04/15/2020 01:04:54</publishTime>
+    </File>
+    <File Include="System.IO.FileSystem.Watcher.dll">
+      <publishTime>04/15/2020 01:04:50</publishTime>
+    </File>
+    <File Include="System.IO.IsolatedStorage.dll">
+      <publishTime>04/15/2020 01:04:50</publishTime>
+    </File>
+    <File Include="System.IO.MemoryMappedFiles.dll">
+      <publishTime>04/15/2020 01:04:50</publishTime>
+    </File>
+    <File Include="System.IO.Pipelines.dll">
+      <publishTime>04/16/2020 18:30:16</publishTime>
+    </File>
+    <File Include="System.IO.Pipes.AccessControl.dll">
+      <publishTime>04/15/2020 01:04:54</publishTime>
+    </File>
+    <File Include="System.IO.Pipes.dll">
+      <publishTime>04/15/2020 01:04:52</publishTime>
+    </File>
+    <File Include="System.IO.UnmanagedMemoryStream.dll">
+      <publishTime>04/15/2020 01:04:54</publishTime>
+    </File>
+    <File Include="System.Linq.dll">
+      <publishTime>04/15/2020 01:04:50</publishTime>
+    </File>
+    <File Include="System.Linq.Expressions.dll">
+      <publishTime>04/15/2020 01:04:52</publishTime>
+    </File>
+    <File Include="System.Linq.Parallel.dll">
+      <publishTime>04/15/2020 01:04:52</publishTime>
+    </File>
+    <File Include="System.Linq.Queryable.dll">
+      <publishTime>04/15/2020 01:04:52</publishTime>
+    </File>
+    <File Include="System.Memory.dll">
+      <publishTime>04/15/2020 01:04:52</publishTime>
+    </File>
+    <File Include="System.Net.dll">
+      <publishTime>04/15/2020 01:04:54</publishTime>
+    </File>
+    <File Include="System.Net.Http.dll">
+      <publishTime>04/15/2020 01:04:52</publishTime>
+    </File>
+    <File Include="System.Net.HttpListener.dll">
+      <publishTime>04/15/2020 01:04:52</publishTime>
+    </File>
+    <File Include="System.Net.Mail.dll">
+      <publishTime>04/15/2020 01:04:52</publishTime>
+    </File>
+    <File Include="System.Net.NameResolution.dll">
+      <publishTime>04/15/2020 01:04:52</publishTime>
+    </File>
+    <File Include="System.Net.NetworkInformation.dll">
+      <publishTime>04/15/2020 01:04:54</publishTime>
+    </File>
+    <File Include="System.Net.Ping.dll">
+      <publishTime>04/15/2020 01:04:54</publishTime>
+    </File>
+    <File Include="System.Net.Primitives.dll">
+      <publishTime>04/15/2020 01:04:42</publishTime>
+    </File>
+    <File Include="System.Net.Requests.dll">
+      <publishTime>04/15/2020 01:04:46</publishTime>
+    </File>
+    <File Include="System.Net.Security.dll">
+      <publishTime>04/15/2020 01:04:42</publishTime>
+    </File>
+    <File Include="System.Net.ServicePoint.dll">
+      <publishTime>04/15/2020 01:04:44</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
