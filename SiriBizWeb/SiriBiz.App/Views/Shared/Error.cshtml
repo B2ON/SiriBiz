@@ -1,0 +1,26 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+@if (Model.ShowRequestId)
+{
+    <p>
+        <strong>Request ID:</strong> <code>@Model.RequestId</code>
+    </p>
+}
+<div class="container d-flex flex-column justify-content-center pt-5 mt-n6" style="flex: 1 0 auto;">
+    <div class="pt-7 pb-5">
+        <div class="text-center mb-2 pb-4">
+            <h1 class="mb-5">
+                <img class="d-inline-block" src="img/pages/404/404-text.svg" alt="Error 404" /><span class="sr-only">Error 404</span>
+            </h1>
+            <h2>Page not found!</h2>
+            <p class="pb-2">It seems we can’t find the page you are looking for.</p><a class="btn btn-translucent-primary mr-3" href="index.html">Go to homepage</a><span>Or try</span>
+        </div>
+        <div class="input-group-overlay mx-auto" style="max-width: 390px;">
+            <div class="input-group-prepend-overlay"><span class="input-group-text"><i class="fe-search"></i></span></div>
+            <input class="form-control prepended-form-control" type="text" placeholder="Search">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,186 @@
+﻿@{
+    var nav_style = ViewBag.NavStyle != null ? ViewBag.NavStyle as string : "navbar-floating navbar-dark";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SiriBiz.Com</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/lib/jarallax/dist/jarallax.css" rel="stylesheet" />
+    <link href="~/lib/tiny-slider/dist/tiny-slider.css" rel="stylesheet" />
+    <link href="~/lib/lightgallery/css/lightgallery.min.css" rel="stylesheet" />
+    <link href="~/lib/simplebar/dist/simplebar.css" rel="stylesheet" />
+    <link href="~/lib/siribiz-icon-1/siribiz.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/theme.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <!-- Page loading spinner-->
+    <div class="cs-page-loading active">
+        <div class="cs-page-loading-inner">
+            <div class="cs-page-spinner"></div><span>Loading...</span>
+        </div>
+    </div>
+    <div id="fb-root"></div>
+    <main class="cs-page-wrapper d-flex flex-column">
+        <!-- Sign In Modal-->
+        <div class="modal fade" id="modal-signin" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content border-0">
+                    <div class="cs-view show" id="modal-signin-view">
+                        <div class="modal-header border-0 bg-dark px-4">
+                            <h4 class="modal-title text-light">Sign in</h4>
+                            <button class="close text-light" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body px-4">
+                            <p class="font-size-ms text-muted">Sign in to your account using email and password provided during registration.</p>
+                            <form class="needs-validation" asp-antiforgery="true" method="post" asp-controller="Account" asp-action="SignIn" novalidate>
+                                <div class="input-group-overlay form-group">
+                                    <div class="input-group-prepend-overlay"><span class="input-group-text"><i class="siribiz-mail"></i></span></div>
+                                    <input class="form-control prepended-form-control" name="email" type="email" placeholder="Email" required>
+                                </div>
+                                <div class="input-group-overlay cs-password-toggle form-group">
+                                    <div class="input-group-prepend-overlay"><span class="input-group-text"><i class="siribiz-lock"></i></span></div>
+                                    <input class="form-control prepended-form-control" name="password" type="password" placeholder="Password" required>
+                                    <label class="cs-password-toggle-btn">
+                                        <input class="custom-control-input" type="checkbox"><i class="siribiz-eye cs-password-toggle-indicator"></i><span class="sr-only">Show password</span>
+                                    </label>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" name="keep_signin" value="true" type="checkbox" id="keep-signed">
+                                        <label class="custom-control-label" for="keep-signed">Keep me signed in</label>
+                                    </div>
+                                    <a class="nav-link-style font-size-ms" asp-action="Forgot">Forgot password?</a>
+                                </div>
+                                <button class="btn btn-primary btn-block" type="submit">Sign in</button>
+                                <p class="font-size-sm pt-3 mb-0">Don't have an account? <a href='#' class='font-weight-medium' data-view='#modal-signup-view'>Sign up</a></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cs-view" id="modal-signup-view">
+                        <div class="modal-header border-0 bg-dark px-4">
+                            <h4 class="modal-title text-light">Sign up</h4>
+                            <button class="close text-light" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body px-4">
+                            <p class="font-size-ms text-muted">Registration takes less than a minute but gives you full control over your orders.</p>
+                            <form class="needs-validation" asp-controller="Account" asp-action="SignUp" novalidate>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Full name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Email" required>
+                                </div>
+                                <div class="cs-password-toggle form-group">
+                                    <input class="form-control" type="password" placeholder="Password" required>
+                                    <label class="cs-password-toggle-btn">
+                                        <input class="custom-control-input" type="checkbox"><i class="siribiz-eye cs-password-toggle-indicator"></i><span class="sr-only">Show password</span>
+                                    </label>
+                                </div>
+                                <div class="cs-password-toggle form-group">
+                                    <input class="form-control" type="password" placeholder="Confirm password" required>
+                                    <label class="cs-password-toggle-btn">
+                                        <input class="custom-control-input" type="checkbox"><i class="siribiz-eye cs-password-toggle-indicator"></i><span class="sr-only">Show password</span>
+                                    </label>
+                                </div>
+                                <button class="btn btn-primary btn-block" type="submit">Sign up</button>
+                                <p class="font-size-sm pt-3 mb-0">Already have an account? <a href='#' class='font-weight-medium' data-view='#modal-signin-view'>Sign in</a></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-body text-center px-4 pt-2 pb-4">
+                        <hr>
+                        <p class="font-size-sm font-weight-medium text-heading pt-4">Or sign in with</p><a class="social-btn sb-facebook sb-lg mx-1 mb-2" href="#"><i class="siribiz-facebook"></i></a><a class="social-btn sb-twitter sb-lg mx-1 mb-2" href="#"><i class="siribiz-twitter"></i></a><a class="social-btn sb-instagram sb-lg mx-1 mb-2" href="#"><i class="siribiz-instagram"></i></a><a class="social-btn sb-google sb-lg mx-1 mb-2" href="#"><i class="siribiz-google"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar (Floating dark)-->
+        <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+        <header class="cs-header navbar navbar-expand-lg @nav_style navbar-sticky" data-scroll-header="">
+            <div class="container px-0 px-xl-3">
+                <button class="navbar-toggler ml-n2 mr-2" type="button" data-toggle="offcanvas" data-offcanvas-id="primaryMenu"><span class="navbar-toggler-icon"></span></button>
+                <a class="navbar-brand order-lg-1 mx-auto ml-lg-0 pr-lg-2 mr-lg-4" href="/">
+                    <img class="navbar-floating-logo d-none d-lg-block" width="153" src="~/images/@(nav_style.Contains("navbar-light")?"logo-dark.png":"logo-light.png")" alt="Siri-Biz.Com">
+                    <img class="navbar-stuck-logo" width="153" src="~/images/logo-dark.png" alt="Around">
+                    <img class="d-lg-none" width="58" src="~/images/logo-icon.png" alt="Siri-Biz.Com">
+                </a>
+                <div class="d-flex align-items-center order-lg-3 ml-lg-auto">
+                    <partial name="_AccountAuthenPartial.cshtml" />
+                </div>
+                <div class="cs-offcanvas-collapse order-lg-2" id="primaryMenu">
+                    <div class="cs-offcanvas-cap navbar-box-shadow">
+                        <h5 class="mt-1 mb-0">Menu</h5>
+                        <button class="close lead" type="button" data-toggle="offcanvas" data-offcanvas-id="primaryMenu"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="cs-offcanvas-body">
+                        <!-- Menu-->
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">Demos</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-column dropdown-column-img bg-secondary" href="index.html" style="background-image: url(../../images/menu-banner.jpg);"></a>
+                                    <div class="dropdown-column">
+                                        <a class="dropdown-item" href="https://demo.siri-biz.com/airbooking">Airling Booking Online</a>
+                                        <a class="dropdown-item" href="https://demo.siri-biz.com/airbooking">Airling Booking Flight</a>
+                                        <a class="dropdown-item" href="https://demo.siri-biz.com/ecommerce">Shopping HomePage</a>
+                                        <a class="dropdown-item" href="https://demo.siri-biz.com/ecommerce/cart">Shopping Cart</a>
+                                        <a class="dropdown-item" href="https://demo.siri-biz.com/ecommerce/confirm">Shopping Comfirm</a>
+                                        <a class="dropdown-item" href="https://demo.siri-biz.com/grovernment">Grovernment HomePage</a>
+                                    </div>
+                                    <div class="dropdown-column">
+                                        <a class="dropdown-item" href="demo-product-gadget.html">Blogs News</a>
+                                    </div>
+                                </div>
+                            </li>
+                            @await Component.InvokeAsync("BlogMenu")
+                            <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="ComingSoon">Shopping Mall</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="About">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Help">Help Center</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        @RenderBody()
+
+    </main>
+
+    <partial name="_FooterPartial.cshtml" />
+
+    <!-- Back to top button-->
+    <a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted font-size-sm mr-2">Top</span><i class="btn-scroll-top-icon siribiz-arrow-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="~/lib/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="~/lib/simplebar/dist/simplebar.js"></script>
+    <script src="~/lib/jarallax/dist/jarallax.min.js"></script>
+    <script src="~/lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="~/lib/shufflejs/dist/shuffle.min.js"></script>
+    <script src="~/lib/cleave.js/cleave.min.js"></script>
+    <!-- <script src="~/lib/lg-video/lg-video.min.js"></script>-->
+    <!-- lightgallery plugins -->
+    <script src="~/lib/lightgallery/js/lightgallery.js"></script>
+    <script src="~/js/theme.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        (function () {
+            window.onload = function () {
+                var preloader = document.querySelector('.cs-page-loading');
+                preloader.classList.remove('active');
+                setTimeout(function () {
+                    preloader.remove();
+                }, 2000);
+            };
+        })();
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

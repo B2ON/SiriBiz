@@ -1,0 +1,234 @@
+﻿@{
+    ViewData["Title"] = "Post";
+    ViewBag.NavStyle = "navbar-light navbar-box-shadow bg-light navbar-sticky";
+}
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <!-- Content-->
+        <div class="col-lg-9 py-4 mb-2 mb-sm-0 pb-sm-5">
+            <div class="pb-4" style="max-width: 38rem;">
+                <nav aria-label="breadcrumb">
+                    <ol class="py-1 my-2 breadcrumb">
+                        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="breadcrumb-item">
+                            <a asp-route="Blog">Blog</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a asp-route="Blog" asp-route-article="@ViewBag.Article">@ViewBag.Article</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">@ViewBag.Slug</li>
+                    </ol>
+                </nav>
+                <h1>@ViewBag.Slug</h1>
+            </div>
+            <!-- Post author + Sharing-->
+            <div class="row position-relative no-gutters align-items-center border-top border-bottom mb-4">
+                <div class="col-md-6 py-3 pr-md-3">
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                        <div class="media media-ie-fix align-items-center mr-grid-gutter">
+                            <a class="d-block" href="#"><img class="rounded-circle mr-1" width="64" src="~/images/blog/single/author.jpg" alt="Emma Brown" /></a>
+                            <div class="media-body pl-2">
+                                <h6 class="nav-heading mb-1"><a href="#">Emma Brown</a></h6>
+                                <div class="text-nowrap">
+                                    <div class="meta-link font-size-xs"><i class="siribiz-calendar mr-1 mt-n1"></i>&nbsp;Feb 19</div><span class="meta-divider"></span><a class="meta-link font-size-xs" href="#comments" data-scroll><i class="siribiz-message-square mr-1"></i>&nbsp;3</a>
+                                </div>
+                            </div>
+                        </div><a class="btn btn-translucent-primary btn-sm" href="#">Follow</a>
+                    </div>
+                </div>
+                <div class="d-none d-md-block position-absolute border-left h-100" style="top: 0; left: 50%; width: 1px;"></div>
+                <div class="col-md-6 pl-md-3 py-3">
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                        <h6 class="text-nowrap my-2 mr-3">Share post:</h6><a class="social-btn sb-outline sb-facebook ml-2 my-2" href="#"><i class="siribiz-facebook"></i></a><a class="social-btn sb-outline sb-twitter ml-2 my-2" href="#"><i class="siribiz-twitter"></i></a><a class="social-btn sb-outline sb-google ml-2 my-2" href="#"><i class="siribiz-google"></i></a><a class="social-btn sb-outline sb-email ml-2 my-2" href="#"><i class="siribiz-mail"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Post content-->
+            <p class="py-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum.</p>
+            <h2 class="h3 pt-2 pb-4">Some real life examples</h2>
+            <div class="cs-carousel cs-gallery">
+                <div class="cs-carousel-inner" data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: false, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1, &quot;gutter&quot;: 20},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 20}, &quot;700&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 30}}}">
+                    <div><a class="cs-gallery-item rounded-lg" href="~/images/blog/single/01.jpg" data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Gallery image caption #1&lt;/h6&gt;"><img src="~/images/blog/single/th01.jpg" alt="Gallery thumbnail" /><span class="cs-gallery-caption">Gallery image caption #1</span></a></div>
+                    <div><a class="cs-gallery-item rounded-lg" href="~/images/blog/single/02.jpg" data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Gallery image caption #2&lt;/h6&gt;"><img src="~/images/blog/single/th02.jpg" alt="Gallery thumbnail" /><span class="cs-gallery-caption">Gallery image caption #2</span></a></div>
+                    <div><a class="cs-gallery-item rounded-lg" href="~/images/blog/single/03.jpg" data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Gallery image caption #3&lt;/h6&gt;"><img src="~/images/blog/single/th03.jpg" alt="Gallery thumbnail" /><span class="cs-gallery-caption">Gallery image caption #3</span></a></div>
+                </div>
+            </div>
+            <div class="py-4">
+                <p class="pt-3">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <h2 class="h3 pt-1 pb-4">Expert opinion</h2>
+            <div class="bg-faded-primary rounded-lg p-4 mb-4">
+                <div class="p-md-3">
+                    <blockquote class="blockquote mb-0">
+                        <p class="text-nav">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                        <p class="text-nav">Mattis enim ut tellus elementum sagittis vitae et leo duis.</p>
+                        <footer class="blockquote-footer">Miguel Sánchez</footer>
+                    </blockquote>
+                </div>
+            </div>
+            <p class="py-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum.</p>
+            <!-- Tags + Sharing-->
+            <div class="row no-gutters position-relative align-items-center border-top border-bottom my-5">
+                <div class="col-md-6 py-2 py-dm-3 pr-md-3 text-center text-md-left"><a class="cs-tag mr-2 my-2" href="#">#ui design</a><a class="cs-tag mr-2 my-2" href="#">#workshop</a><a class="cs-tag mr-2 my-2" href="#">#business</a></div>
+                <div class="d-none d-md-block position-absolute border-left h-100" style="top: 0; left: 50%; width: 1px;"></div>
+                <div class="col-md-6 pl-md-3 py-2 py-md-3">
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                        <h6 class="text-nowrap my-2 mr-3">Share post:</h6><a class="social-btn sb-outline sb-facebook ml-2 my-2" href="#"><i class="siribiz-facebook"></i></a><a class="social-btn sb-outline sb-twitter ml-2 my-2" href="#"><i class="siribiz-twitter"></i></a><a class="social-btn sb-outline sb-google ml-2 my-2" href="#"><i class="siribiz-google"></i></a><a class="social-btn sb-outline sb-email ml-2 my-2" href="#"><i class="siribiz-mail"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Prev / Next post navigation-->
+            <nav class="d-flex justify-content-between pb-4 mb-5" aria-label="Entry navigation">
+                <a class="cs-entry-nav mr-3" href="#">
+                    <h3 class="h5 pb-sm-2">Prev post</h3>
+                    <div class="media">
+                        <div class="cs-entry-nav-thumb d-none d-sm-block">
+                            <img src="~/images/blog/th04.jpg" alt="Post thumbnail" />
+                        </div>
+                        <div class="media-body pl-sm-3">
+                            <h4 class="nav-heading font-size-md font-weight-medium mb-0">How technology affect our decisions</h4><span class="font-size-xs text-muted">by Jessica Miller</span>
+                        </div>
+                    </div>
+                </a><a class="cs-entry-nav ml-3" href="#">
+                    <h3 class="h5 pb-sm-2 text-right">Next post</h3>
+                    <div class="media">
+                        <div class="media-body text-right pr-sm-3">
+                            <h4 class="nav-heading font-size-md font-weight-medium mb-0">Open space - new trend in office design</h4><span class="font-size-xs text-muted">by Daniel Adams</span>
+                        </div>
+                        <div class="cs-entry-nav-thumb d-none d-sm-block">
+                            <img src="~/images/blog/th05.jpg" alt="Post thumbnail" />
+                        </div>
+                    </div>
+                </a>
+            </nav>
+            <!-- Comments-->
+            <div class="pb-4 mb-5" id="comments">
+                <h2 class="h3 pb-4">3 Comments</h2>
+                <div class="cs-comment">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat cumque nihil impedit quo minus. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="media media-ie-fix align-items-center">
+                            <img class="rounded-circle" width="42" src="~/images/blog/comments/01.jpg" alt="Barbara Palson" />
+                            <div class="media-body pl-2 ml-1">
+                                <h4 class="font-size-sm mb-0">Barbara Palson</h4><span class="font-size-xs text-muted">3 days ago</span>
+                            </div>
+                        </div><a class="btn btn-outline-primary btn-sm" href="#"><i class="siribiz-corner-up-left font-size-base mr-2 ml-n1"></i>Reply</a>
+                    </div>
+                    <div class="cs-comment">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat cumque nihil impedit quo minus. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                        <div class="media align-items-center">
+                            <img class="rounded-circle" width="42" src="~/images/blog/comments/02.jpg" alt="Daniel Adams" />
+                            <div class="media-body pl-2 ml-1">
+                                <h4 class="font-size-sm mb-0">Daniel Adams</h4><span class="font-size-xs text-muted">2 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-comment">
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="media media-ie-fix align-items-center">
+                            <img class="rounded-circle" width="42" src="~/images/blog/comments/03.jpg" alt="Tim Brooks" />
+                            <div class="media-body pl-2 ml-1">
+                                <h4 class="font-size-sm mb-0">Tim Brooks</h4><span class="font-size-xs text-muted">1 week ago</span>
+                            </div>
+                        </div><a class="btn btn-outline-primary btn-sm" href="#"><i class="siribiz-corner-up-left font-size-base mr-2 ml-n1"></i>Reply</a>
+                    </div>
+                </div><a class="btn btn-translucent-primary btn-block" href="#comment-form" data-toggle="collapse">Join the conversation</a>
+                <!-- Comment form-->
+                <div class="collapse" id="comment-form">
+                    <form class="needs-validation bg-light rounded-lg box-shadow p-4 p-lg-5 mt-4" novalidate>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label class="form-label" for="com-name">Your name<sup class="text-danger ml-1">*</sup></label>
+                                <input class="form-control" type="text" id="com-name" placeholder="Enter your name" required>
+                                <div class="invalid-feedback">Please enter your name.</div>
+                                <div class="valid-feedback">Looks good!</div>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label class="form-label" for="com-email">Email address<sup class="text-danger ml-1">*</sup></label>
+                                <input class="form-control" type="email" id="com-email" placeholder="Enter your email" required>
+                                <div class="invalid-feedback">Please provide a vild email address.</div>
+                                <div class="valid-feedback">Looks good!</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="com-text">Comment<sup class="text-danger ml-1">*</sup></label>
+                            <textarea class="form-control" id="com-text" rows="6" placeholder="Write your comment here" required></textarea>
+                            <div class="invalid-feedback">Please write your comment.</div>
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Post comment</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Related posts (carousel)-->
+            <div class="pb-4 pb-md-5">
+                <h2 class="h3 pb-4">Related posts</h2>
+                <div class="cs-carousel">
+                    <div class="cs-carousel-inner" data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: false, &quot;autoHeight&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1, &quot;gutter&quot;: 16},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 16},&quot;850&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 16}, &quot;1100&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 23}}}">
+                        <!-- Article-->
+                        <div class="pb-2">
+                            <article class="card card-hover mx-1">
+                                <a class="card-img-top" href="#"><img src="~/images/blog/02.jpg" alt="Post thumbnail" /></a>
+                                <div class="card-body">
+                                    <a class="meta-link font-size-sm mb-2" href="#">Technology</a>
+                                    <h2 class="h5 nav-heading mb-4"><a href="#">How technology affect our decisions</a></h2><a class="media meta-link font-size-sm align-items-center pt-3" href="#">
+                                        <img class="rounded-circle" width="36" src="~/images/blog/avatar/03.jpg" alt="Jessica Miller" />
+                                        <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Jessica Miller</span></div>
+                                    </a>
+                                    <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="siribiz-message-square mr-1"></i>&nbsp;3</a><span class="meta-divider"></span><a class="meta-link font-size-xs" href="#"><i class="siribiz-calendar mr-1 mt-n1"></i>&nbsp;Feb 4</a></div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Article-->
+                        <div class="pb-2">
+                            <article class="card card-hover mx-1">
+                                <a class="card-img-top" href="#"><img src="~/images/blog/03.jpg" alt="Post thumbnail" /></a>
+                                <div class="card-body">
+                                    <a class="meta-link font-size-sm mb-2" href="#">Business</a>
+                                    <h2 class="h5 nav-heading mb-4"><a href="#">Open space - new trend in office design</a></h2><a class="media meta-link font-size-sm align-items-center pt-3" href="#">
+                                        <img class="rounded-circle" width="36" src="~/images/blog/avatar/05.jpg" alt="Daniel Adams" />
+                                        <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Daniel Adams</span></div>
+                                    </a>
+                                    <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="siribiz-message-square mr-1"></i>&nbsp;12</a><span class="meta-divider"></span><a class="meta-link font-size-xs" href="#"><i class="siribiz-calendar mr-1 mt-n1"></i>&nbsp;Jan 10</a></div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Article-->
+                        <div class="pb-2">
+                            <article class="card card-hover mx-1">
+                                <a class="card-img-top" href="#"><img src="~/images/blog/06.jpg" alt="Post thumbnail" /></a>
+                                <div class="card-body">
+                                    <a class="meta-link font-size-sm mb-2" href="#">Business</a>
+                                    <h2 class="h5 nav-heading mb-4"><a href="#">Business offices of Fortune 500 companies</a></h2><a class="media meta-link font-size-sm align-items-center pt-3" href="#">
+                                        <img class="rounded-circle" width="36" src="~/images/blog/avatar/06.jpg" alt="Barbara Palson" />
+                                        <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Barbara Palson</span></div>
+                                    </a>
+                                    <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="siribiz-message-square mr-1"></i>&nbsp;5</a><span class="meta-divider"></span><a class="meta-link font-size-xs" href="#"><i class="siribiz-calendar mr-1 mt-n1"></i>&nbsp;Nov 20</a></div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Article-->
+                        <div class="pb-2">
+                            <article class="card card-hover mx-1">
+                                <a class="card-img-top" href="#"><img src="~/images/blog/05.jpg" alt="Post thumbnail" /></a>
+                                <div class="card-body">
+                                    <a class="meta-link font-size-sm mb-2" href="#">Technology</a>
+                                    <h2 class="h5 nav-heading mb-4"><a href="#">Payments made easy. New tech in E-commerce</a></h2><a class="media meta-link font-size-sm align-items-center pt-3" href="#">
+                                        <img class="rounded-circle" width="36" src="~/images/blog/avatar/02.jpg" alt="Charlie Welch" />
+                                        <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Charlie Welch</span></div>
+                                    </a>
+                                    <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="siribiz-message-square mr-1"></i>&nbsp;17</a><span class="meta-divider"></span><a class="meta-link font-size-xs" href="#"><i class="siribiz-calendar mr-1 mt-n1"></i>&nbsp;Nov 08</a></div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

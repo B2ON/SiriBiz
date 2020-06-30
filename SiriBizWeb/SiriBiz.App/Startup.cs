@@ -2,14 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using VueCliMiddleware;
+using SiriBiz.Core.IRepository;
+using SiriBiz.Core.Repository;
 
 namespace SiriBiz.App
 {
@@ -25,10 +26,16 @@ namespace SiriBiz.App
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
-            services.AddSpaStaticFiles(configuration =>
+            services.AddControllersWithViews();
+
+            services.AddScoped<IAccountRepository, AccountRepository>();
+            services.AddScoped<IApplicationRepository, ApplicationRepository>();
+
+            // Identity Config
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            .AddCookie(cfg =>
             {
-                configuration.RootPath = "ClientApp";
+                cfg.LoginPath = "/SignIn";
             });
         }
 
@@ -39,28 +46,29 @@ namespace SiriBiz.App
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseHsts();
+            }
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
 
             app.UseRouting();
-            app.UseSpaStaticFiles();
+
+            // Identity Config
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
-            });
-
-            app.UseSpa(spa =>
-            {
-                if (env.IsDevelopment())
-                    spa.Options.SourcePath = "ClientApp";
-                else
-                    spa.Options.SourcePath = "dist";
-
-                if (env.IsDevelopment())
-                {
-                    spa.UseVueCli(npmScript: "serve");
-                }
-
+                endpoints.MapControllerRoute(name: "blog",
+                    pattern: "Blog/{*article}",
+                    defaults: new { controller = "Blog", action = "Blog" });
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
