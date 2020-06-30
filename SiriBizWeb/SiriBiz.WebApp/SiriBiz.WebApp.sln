@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiriBiz.WebApp", "SiriBiz.WebApp.csproj", "{163366EC-B1E7-44E7-94FA-E8D7DCE4948D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiriBiz.LineHook", "..\SiriBiz.LineHook\SiriBiz.LineHook.csproj", "{CA865ADC-5A22-4B19-B72D-6063FE845C58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiriBiz.LineHook", "..\SiriBiz.LineHook\SiriBiz.LineHook.csproj", "{CA865ADC-5A22-4B19-B72D-6063FE845C58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiriBiz.Core", "..\SiriBiz.Core\SiriBiz.Core.csproj", "{6EEC6F3C-AAD9-455F-870A-71E748684718}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiriBiz.App", "..\SiriBiz.App\SiriBiz.App.csproj", "{E11631EC-4D31-4D8B-95C5-22E824E3F05D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{CA865ADC-5A22-4B19-B72D-6063FE845C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA865ADC-5A22-4B19-B72D-6063FE845C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA865ADC-5A22-4B19-B72D-6063FE845C58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EEC6F3C-AAD9-455F-870A-71E748684718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EEC6F3C-AAD9-455F-870A-71E748684718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EEC6F3C-AAD9-455F-870A-71E748684718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EEC6F3C-AAD9-455F-870A-71E748684718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E11631EC-4D31-4D8B-95C5-22E824E3F05D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E11631EC-4D31-4D8B-95C5-22E824E3F05D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E11631EC-4D31-4D8B-95C5-22E824E3F05D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E11631EC-4D31-4D8B-95C5-22E824E3F05D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

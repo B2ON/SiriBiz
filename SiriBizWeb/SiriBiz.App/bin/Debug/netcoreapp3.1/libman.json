@@ -1,0 +1,83 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "provider": "unpkg",
+      "library": "smooth-scroll@16.1.3",
+      "destination": "wwwroot/lib/smooth-scroll/"
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "shufflejs@5.2.3",
+      "destination": "wwwroot/lib/shufflejs/",
+      "files": [
+        "dist/shuffle.esm.js",
+        "dist/shuffle.esm.js.map",
+        "dist/shuffle.esm.min.js",
+        "dist/shuffle.js",
+        "dist/shuffle.js.map",
+        "dist/shuffle.min.js",
+        "dist/shuffle.min.js.map"
+      ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "imagesloaded@4.1.4",
+      "destination": "wwwroot/lib/imagesloaded/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "jarallax@1.12.1",
+      "destination": "wwwroot/lib/jarallax/",
+      "files": [
+        "dist/jarallax-element.js",
+        "dist/jarallax-element.min.js",
+        "dist/jarallax-element.min.js.map",
+        "dist/jarallax-video.js",
+        "dist/jarallax-video.min.js",
+        "dist/jarallax-video.min.js.map",
+        "dist/jarallax.css",
+        "dist/jarallax.js",
+        "dist/jarallax.min.js",
+        "dist/jarallax.min.js.map"
+      ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "simplebar@5.2.1",
+      "destination": "wwwroot/lib/simplebar/",
+      "files": [
+        "dist/simplebar-core.esm.js",
+        "dist/simplebar-core.esm.js.map",
+        "dist/simplebar.css",
+        "dist/simplebar.esm.js",
+        "dist/simplebar.esm.js.map",
+        "dist/simplebar.js",
+        "dist/simplebar.min.css",
+        "dist/simplebar.min.js"
+      ]
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "tiny-slider@2.9.2",
+      "destination": "wwwroot/lib/tiny-slider/"
+    },
+    {
+      "library": "lightgallery@1.7.2",
+      "destination": "wwwroot/lib/lightgallery/"
+    },
+    {
+      "library": "cleave.js@1.6.0",
+      "destination": "wwwroot/lib/cleave.js/",
+      "files": [
+        "cleave.js",
+        "cleave.min.js"
+      ]
+    },
+    {
+      "library": "lg-video@1.3.0",
+      "destination": "wwwroot/lib/lg-video/"
+    }
+  ]
+}

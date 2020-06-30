@@ -1,0 +1,16 @@
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.Core\bin\Release\SiriBiz.Core.dll
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.Core\bin\Release\SiriBiz.Core.pdb
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.Core\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.Core\bin\Release\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.Core\bin\Release\Microsoft.Extensions.Options.dll
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.Core\bin\Release\Microsoft.Extensions.Primitives.dll
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.Core\bin\Release\System.Buffers.dll
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.Core\bin\Release\System.ComponentModel.Annotations.dll
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.Core\bin\Release\System.Memory.dll
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.Core\bin\Release\System.Numerics.Vectors.dll
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.Core\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.Core\obj\Release\SiriBiz.Core.csprojAssemblyReference.cache
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.Core\obj\Release\SiriBiz.Core.csproj.CoreCompileInputs.cache
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.Core\obj\Release\SiriBiz.Core.csproj.CopyComplete
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.Core\obj\Release\SiriBiz.Core.dll
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.Core\obj\Release\SiriBiz.Core.pdb

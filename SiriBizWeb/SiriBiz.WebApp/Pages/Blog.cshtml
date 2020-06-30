@@ -1,4 +1,267 @@
 ﻿@page
 @model SiriBiz.WebApp.Pages.BlogModel
 @{
+    ViewData["Title"] = "Blog";
+    ViewBag.NavStyle = "navbar-light navbar-box-shadow bg-light navbar-sticky";
+    var title = (!string.IsNullOrEmpty(Model.Search) ? "- " : "" ) + Model.Search;
 }
+<div class="cs-sidebar-enabled cs-sidebar-right">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 cs-content py-4 mb-2 mb-sm-0 pb-sm-5">
+                <nav aria-label="breadcrumb">
+                    <ol class="py-1 my-2 breadcrumb">
+                        <li class="breadcrumb-item"><a asp-page="./">Home</a></li>
+                        <li class="breadcrumb-item">
+                            <a asp-page="./Blog">Blog</a>
+                        </li>
+                        @if(!string.IsNullOrEmpty(Model.Search))
+                        {
+                        <li class="breadcrumb-item active" aria-current="page">@Model.Search</li>
+                        }
+                    </ol>
+                </nav>
+                <h1 class="mb-5">Blog @title</h1>
+                <!-- Blog grid-->
+                <div class="cs-masonry-grid overflow-hidden" data-columns="3">
+                    <!-- Post-->
+                    <div class="cs-grid-item">
+                        <article class="card card-hover">
+                            <a class="card-img-top" href="./Post?ข่าวเตี้ยมข"><img src="~/images/blog/01.jpg" alt="Post thumbnail" /></a>
+                            <div class="card-body">
+                                <a class="meta-link font-size-sm mb-2" href="#">Digital design</a>
+                                <h2 class="h5 nav-heading mb-4"><a href="./Post?ข่าวเตี้ยมข">Designers should always keep their users in mind</a></h2><a class="media meta-link font-size-sm align-items-center pt-3" href="#">
+                                    <img class="rounded-circle" width="36" src="~/images/blog/avatar/01.jpg" alt="Emma Brown" />
+                                    <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Emma Brown</span></div>
+                                </a>
+                                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="siribiz-message-square mr-1"></i>&nbsp;6</a><span class="meta-divider"></span><a class="meta-link font-size-xs" href="#"><i class="siribiz-calendar mr-1 mt-n1"></i>&nbsp;Feb 19</a></div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Post-->
+                    <div class="cs-grid-item">
+                        <article class="card card-hover">
+                            <div class="card-body">
+                                <a class="meta-link font-size-sm mb-2" href="#">Brand strategy</a>
+                                <h2 class="h5 nav-heading mb-4"><a href="./Post?ข่าวเตี้ยมข">Simple steps to an effective brand strategy. Real life examples</a></h2><a class="media meta-link font-size-sm align-items-center pt-3" href="#">
+                                    <img class="rounded-circle" width="36" src="~/images/blog/avatar/02.jpg" alt="Charlie Welch" />
+                                    <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Charlie Welch</span></div>
+                                </a>
+                                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="siribiz-message-square mr-1"></i>&nbsp;8</a><span class="meta-divider"></span><a class="meta-link font-size-xs" href="#"><i class="siribiz-calendar mr-1 mt-n1"></i>&nbsp;Feb 15</a></div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Post-->
+                    <div class="cs-grid-item">
+                        <article class="card card-hover">
+                            <a class="card-img-top" href="./Post?ข่าวเตี้ยมข"><img src="~/images/blog/02.jpg" alt="Post thumbnail" /></a>
+                            <div class="card-body">
+                                <a class="meta-link font-size-sm mb-2" href="#">Technology</a>
+                                <h2 class="h5 nav-heading mb-4"><a href="./Post?ข่าวเตี้ยมข">How technological advancements affect our decisions</a></h2><a class="media meta-link font-size-sm align-items-center pt-3" href="#">
+                                    <img class="rounded-circle" width="36" src="~/images/blog/avatar/03.jpg" alt="Jessica Miller" />
+                                    <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Jessica Miller</span></div>
+                                </a>
+                                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="siribiz-message-square mr-1"></i>&nbsp;3</a><span class="meta-divider"></span><a class="meta-link font-size-xs" href="#"><i class="siribiz-calendar mr-1 mt-n1"></i>&nbsp;Feb 4</a></div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Post-->
+                    <div class="cs-grid-item">
+                        <article class="card card-hover">
+                            <a class="card-img-top" href="./Post?ข่าวเตี้ยมข"><img src="~/images/blog/03.jpg" alt="Post thumbnail" /></a>
+                            <div class="card-body">
+                                <a class="meta-link font-size-sm mb-2" href="#">Business</a>
+                                <h2 class="h5 nav-heading mb-4"><a href="./Post?ข่าวเตี้ยมข">Open space - new trend in office design</a></h2><a class="media meta-link font-size-sm align-items-center pt-3" href="#">
+                                    <img class="rounded-circle" width="36" src="~/images/blog/avatar/05.jpg" alt="Daniel Adams" />
+                                    <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Daniel Adams</span></div>
+                                </a>
+                                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="siribiz-message-square mr-1"></i>&nbsp;12</a><span class="meta-divider"></span><a class="meta-link font-size-xs" href="#"><i class="siribiz-calendar mr-1 mt-n1"></i>&nbsp;Jan 10</a></div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Post-->
+                    <div class="cs-grid-item">
+                        <article class="card card-hover">
+                            <div class="card-body">
+                                <a class="meta-link font-size-sm mb-2" href="#">Project management</a>
+                                <h2 class="h5 nav-heading mb-4"><a href="./Post?ข่าวเตี้ยมข">What you can learn about managing projects</a></h2><a class="media meta-link font-size-sm align-items-center pt-3" href="#">
+                                    <img class="rounded-circle" width="36" src="~/images/blog/avatar/04.jpg" alt="Sanomi Smith" />
+                                    <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Sanomi Smith</span></div>
+                                </a>
+                                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="siribiz-message-square mr-1"></i>&nbsp;17</a><span class="meta-divider"></span><a class="meta-link font-size-xs" href="#"><i class="siribiz-calendar mr-1 mt-n1"></i>&nbsp;Jan 23</a></div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Post-->
+                    <div class="cs-grid-item">
+                        <article class="card card-hover">
+                            <a class="card-img-top" href="./Post?ข่าวเตี้ยมข"><img src="~/images/blog/07.jpg" alt="Post thumbnail" /></a>
+                            <div class="card-body">
+                                <a class="meta-link font-size-sm mb-2" href="#">Travel &amp; Vacation</a>
+                                <h2 class="h5 nav-heading mb-4"><a href="./Post?ข่าวเตี้ยมข">Escape to mountains with only one backpack</a></h2><a class="media meta-link font-size-sm align-items-center pt-3" href="#">
+                                    <img class="rounded-circle" width="36" src="~/images/blog/avatar/01.jpg" alt="Emma Brown" />
+                                    <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Emma Brown</span></div>
+                                </a>
+                                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="siribiz-message-square mr-1"></i>&nbsp;31</a><span class="meta-divider"></span><a class="meta-link font-size-xs" href="#"><i class="siribiz-calendar mr-1 mt-n1"></i>&nbsp;Dec 25</a></div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Post-->
+                    <div class="cs-grid-item">
+                        <article class="card card-hover">
+                            <a class="card-img-top" href="./Post?ข่าวเตี้ยมข"><img src="~/images/blog/05.jpg" alt="Post thumbnail" /></a>
+                            <div class="card-body">
+                                <a class="meta-link font-size-sm mb-2" href="#">Technology</a>
+                                <h2 class="h5 nav-heading mb-4"><a href="./Post?ข่าวเตี้ยมข">Payments made easy. How new Tech will affect E-Commerce industry?</a></h2><a class="media meta-link font-size-sm align-items-center pt-3" href="#">
+                                    <img class="rounded-circle" width="36" src="~/images/blog/avatar/06.jpg" alt="Barbara Palson" />
+                                    <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Barbara Palson</span></div>
+                                </a>
+                                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="siribiz-message-square mr-1"></i>&nbsp;4</a><span class="meta-divider"></span><a class="meta-link font-size-xs" href="#"><i class="siribiz-calendar mr-1 mt-n1"></i>&nbsp;Dec 12</a></div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Post-->
+                    <div class="cs-grid-item">
+                        <article class="card card-hover">
+                            <div class="card-body">
+                                <a class="meta-link font-size-sm mb-2" href="#">Digital design</a>
+                                <h2 class="h5 nav-heading mb-4"><a href="./Post?ข่าวเตี้ยมข">Top 5 Secrets of Making Successful Corporate Identity Design</a></h2><a class="media meta-link font-size-sm align-items-center pt-3" href="#">
+                                    <img class="rounded-circle" width="36" src="~/images/blog/avatar/02.jpg" alt="Charlie Welch" />
+                                    <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Charlie Welch</span></div>
+                                </a>
+                                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="siribiz-message-square mr-1"></i>&nbsp;22</a><span class="meta-divider"></span><a class="meta-link font-size-xs" href="#"><i class="siribiz-calendar mr-1 mt-n1"></i>&nbsp;Dec 18</a></div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Post-->
+                    <div class="cs-grid-item">
+                        <article class="card card-hover">
+                            <div class="card-body">
+                                <a class="meta-link font-size-sm mb-2" href="#">Project management</a>
+                                <h2 class="h5 nav-heading mb-4"><a href="./Post?ข่าวเตี้ยมข">3 things everyone knows about Management that you don't</a></h2><a class="media meta-link font-size-sm align-items-center pt-3" href="#">
+                                    <img class="rounded-circle" width="36" src="~/images/blog/avatar/05.jpg" alt="Daniel Adams" />
+                                    <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Daniel Adams</span></div>
+                                </a>
+                                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="siribiz-message-square mr-1"></i>&nbsp;29</a><span class="meta-divider"></span><a class="meta-link font-size-xs" href="#"><i class="siribiz-calendar mr-1 mt-n1"></i>&nbsp;Nov 27</a></div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Post-->
+                    <div class="cs-grid-item">
+                        <article class="card card-hover">
+                            <a class="card-img-top" href="./Post?ข่าวเตี้ยมข"><img src="~/images/blog/06.jpg" alt="Post thumbnail" /></a>
+                            <div class="card-body">
+                                <a class="meta-link font-size-sm mb-2" href="#">Business</a>
+                                <h2 class="h5 nav-heading mb-4"><a href="./Post?ข่าวเตี้ยมข">Business offices of Fortune 500 companies</a></h2><a class="media meta-link font-size-sm align-items-center pt-3" href="#">
+                                    <img class="rounded-circle" width="36" src="~/images/blog/avatar/06.jpg" alt="Barbara Palson" />
+                                    <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Barbara Palson</span></div>
+                                </a>
+                                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="siribiz-message-square mr-1"></i>&nbsp;5</a><span class="meta-divider"></span><a class="meta-link font-size-xs" href="#"><i class="siribiz-calendar mr-1 mt-n1"></i>&nbsp;Nov 20</a></div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Post-->
+                    <div class="cs-grid-item">
+                        <article class="card card-hover">
+                            <div class="card-body">
+                                <a class="meta-link font-size-sm mb-2" href="#">Travel &amp; Vacation</a>
+                                <h2 class="h5 nav-heading mb-4"><a href="./Post?ข่าวเตี้ยมข">Global travel on a tight budget. Tips &amp; tricks</a></h2><a class="media meta-link font-size-sm align-items-center pt-3" href="#">
+                                    <img class="rounded-circle" width="36" src="~/images/blog/avatar/03.jpg" alt="Jessica Miller" />
+                                    <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Jessica Miller</span></div>
+                                </a>
+                                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="siribiz-message-square mr-1"></i>&nbsp;16</a><span class="meta-divider"></span><a class="meta-link font-size-xs" href="#"><i class="siribiz-calendar mr-1 mt-n1"></i>&nbsp;Nov 13</a></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Pagination-->
+                <div class="d-md-flex justify-content-between align-items-center pt-3 pb-2">
+                    <div class="d-flex justify-content-center align-items-center mb-4">
+                        <label class="pr-1 mr-2">Show</label>
+                        <select class="form-control custom-select mr-2" style="width: 5rem;">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                        </select>
+                        <div class="font-size-sm text-nowrap pl-1 mb-1">posts per page</div>
+                    </div>
+                    <nav class="mb-4" aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><i class="siribiz-chevron-left"></i></a></li>
+                            <li class="page-item d-sm-none"><span class="page-link page-link-static">2 / 10</span></li>
+                            <li class="page-item d-none d-sm-block"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active d-none d-sm-block" aria-current="page"><span class="page-link">2<span class="sr-only">(current)</span></span></li>
+                            <li class="page-item d-none d-sm-block"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item d-none d-sm-block"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item d-none d-sm-block">...</li>
+                            <li class="page-item d-none d-sm-block"><a class="page-link" href="#">10</a></li>
+                            <li class="page-item"><a class="page-link" href="#" aria-label="Next"><i class="siribiz-chevron-right"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Sidebar-->
+            <div class="cs-sidebar col-lg-3 pt-lg-5">
+                <div class="cs-offcanvas-collapse cs-offcanvas-right" id="blog-sidebar">
+                    <div class="cs-offcanvas-cap navbar-box-shadow px-4 mb-3">
+                        <h5 class="mt-1 mb-0">Sidebar</h5>
+                        <button class="close lead" type="button" data-toggle="offcanvas" data-offcanvas-id="blog-sidebar"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="cs-offcanvas-body px-4 pt-3 pt-lg-0 pr-lg-0 pl-lg-2 pl-xl-4" data-simplebar>
+                        <!-- Search-->
+                        <div class="cs-widget mb-5">
+                            <h3 class="cs-widget-title">Search blog</h3>
+                            <div class="input-group-overlay">
+                                <div class="input-group-prepend-overlay"><span class="input-group-text"><i class="siribiz-search"></i></span></div>
+                                <input class="form-control prepended-form-control" type="text" placeholder="Search">
+                            </div>
+                        </div>
+                        <!-- Categories-->
+                        <div class="cs-widget cs-widget-categories mb-5">
+                            <h3 class="cs-widget-title">Categories</h3>
+                            <ul>
+                                <li><a class="cs-widget-link" href="#">Digital design<small class="text-muted pl-1 ml-2">23</small></a></li>
+                                <li><a class="cs-widget-link" href="#">Brand strategy<small class="text-muted pl-1 ml-2">14</small></a></li>
+                                <li><a class="cs-widget-link" href="#">Project management<small class="text-muted pl-1 ml-2">7</small></a></li>
+                                <li><a class="cs-widget-link" href="#">Business<small class="text-muted pl-1 ml-2">19</small></a></li>
+                                <li><a class="cs-widget-link" href="#">Technology<small class="text-muted pl-1 ml-2">35</small></a></li>
+                                <li><a class="cs-widget-link" href="#">Travel &amp; Vacation<small class="text-muted pl-1 ml-2">28</small></a></li>
+                            </ul>
+                        </div>
+                        <!-- Featured posts-->
+                        <div class="cs-widget mt-n1 mb-5">
+                            <h3 class="cs-widget-title pb-1">Trending posts</h3>
+                            <div class="media align-items-center pb-1 mb-3">
+                                <a class="d-block" href="#"><img class="rounded" width="64" src="~/images/blog/th01.jpg" alt="Post" /></a>
+                                <div class="media-body pl-2 ml-1">
+                                    <h4 class="font-size-md nav-heading mb-1"><a class="font-weight-medium" href="#">Virtual Reality - game changing technology</a></h4>
+                                    <p class="font-size-xs text-muted mb-0">by John Doe</p>
+                                </div>
+                            </div>
+                            <div class="media align-items-center pb-1 mb-3">
+                                <a class="d-block" href="#"><img class="rounded" width="64" src="~/images/blog/th02.jpg" alt="Post" /></a>
+                                <div class="media-body pl-2 ml-1">
+                                    <h4 class="font-size-md nav-heading mb-1"><a class="font-weight-medium" href="#">New trends in suburban fashion</a></h4>
+                                    <p class="font-size-xs text-muted mb-0">by Susan Mayer</p>
+                                </div>
+                            </div>
+                            <div class="media align-items-center">
+                                <a class="d-block" href="#"><img class="rounded" width="64" src="~/images/blog/th03.jpg" alt="Post" /></a>
+                                <div class="media-body pl-2 ml-1">
+                                    <h4 class="font-size-md nav-heading mb-1"><a class="font-weight-medium" href="#">Millenials is the top market for companies</a></h4>
+                                    <p class="font-size-xs text-muted mb-0">by Daniel Adams</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tag cloud-->
+                        <div class="cs-widget mb-5">
+                            <h3 class="cs-widget-title pb-1">Popular tags</h3><a class="cs-tag mr-2 mb-2" href="#">#business</a><a class="cs-tag mr-2 mb-2" href="#">#online shopping</a><a class="cs-tag mr-2 mb-2" href="#">#gadgets</a><a class="cs-tag mr-2 mb-2" href="#">#travel</a><a class="cs-tag mr-2 mb-2" href="#">#brands</a><a class="cs-tag mr-2 mb-2" href="#">#personal finance</a><a class="cs-tag mb-2" href="#">#around news</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -16,8 +16,11 @@ namespace SiriBiz.WebApp.Pages
         {
             _logger = logger;
         }
-        public void OnGet()
+
+        public string Search { get; set; } = null;
+        public void OnGet(string g = null, string tag = null)
         {
+            Search ??= g ?? tag;
         }
     }
 }
