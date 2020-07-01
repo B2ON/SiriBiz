@@ -10,6 +10,7 @@ namespace SiriBiz.Core.Models
     {
         public eAccountRole Role { get; set; }
         public string Profile { get; set; }
+        public string LoginType { get; set; }
         public string Email { get; set; }
         public string UserName { get; set; }
         public string FirstName { get; set; }

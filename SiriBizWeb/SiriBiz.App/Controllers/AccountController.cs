@@ -27,7 +27,15 @@ namespace SiriBiz.App.Controllers
         [Route("Profile")]
         public IActionResult Profile()
         {
-            return View(_repository.GetUserInfo(email: User.Identity.Name));
+            var identity = ((ClaimsIdentity)User.Identity);
+            var email_address = identity.FindFirst(ClaimTypes.Email)?.Value;
+
+            var user_info = _repository.GetUserInfo(email: email_address);
+            user_info.LoginType ??= identity.AuthenticationType;
+            user_info.FirstName ??= identity.FindFirst(ClaimTypes.GivenName)?.Value;
+            user_info.LastName ??= identity.FindFirst(ClaimTypes.Surname)?.Value;
+
+            return View(user_info);
         }
 
         [HttpGet]
@@ -71,6 +79,14 @@ namespace SiriBiz.App.Controllers
                 }
             }
             return View();
+        }
+
+        [Route("SignIn/{provider}")]
+        [Route("Account/SignIn/{provider}")]
+        [AllowAnonymous]
+        public IActionResult SignIn(string provider, string returnUrl = null)
+        {
+            return Challenge(new AuthenticationProperties { RedirectUri = returnUrl ?? "/", }, provider);
         }
 
         [HttpPost]

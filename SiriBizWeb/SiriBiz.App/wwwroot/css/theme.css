@@ -11460,6 +11460,18 @@ label {
         color: #1da1f2
     }
 
+.sb-microsoft:hover {
+    background-color: #c0c0c0;
+}
+
+    .sb-microsoft:hover > i::before {
+        color: #3b5998 !important;
+    }
+
+    .sb-microsoft:hover.sb-light {
+        color: #1da1f2
+    }
+
 .sb-instagram:hover {
     background-color: #5851db
 }

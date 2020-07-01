@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Adljrf3UxV62Gyz49+7c/mHrPUmtY+GNcK26feyp6XIoYpb8Hk2uRdXd1BXKQIXt1PNkvModR0tZjfhQucbF/A==",
+  "dgSpecHash": "jHATgitHuan+R7URQu+xZ0s2IAopv804xvAOWoEgaVqEOKrksrLDOv/7qwoOa8uVGvvONwMUt7esPapVZgJu0w==",
   "success": true,
   "projectFilePath": "C:\\Users\\boontham\\source\\repos\\boonthamgod\\SiriBiz\\SiriBizWeb\\SiriBiz.App\\SiriBiz.App.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\boontham\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\3.1.5\\microsoft.aspnetcore.authentication.facebook.3.1.5.nupkg.sha512",
+    "C:\\Users\\boontham\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\3.1.5\\microsoft.aspnetcore.authentication.google.3.1.5.nupkg.sha512",
+    "C:\\Users\\boontham\\.nuget\\packages\\microsoft.aspnetcore.authentication.microsoftaccount\\3.1.5\\microsoft.aspnetcore.authentication.microsoftaccount.3.1.5.nupkg.sha512",
+    "C:\\Users\\boontham\\.nuget\\packages\\microsoft.aspnetcore.authentication.twitter\\3.1.5\\microsoft.aspnetcore.authentication.twitter.3.1.5.nupkg.sha512",
     "C:\\Users\\boontham\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\boontham\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\3.1.5\\microsoft.aspnetcore.mvc.razor.extensions.3.1.5.nupkg.sha512",
     "C:\\Users\\boontham\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\3.1.5\\microsoft.aspnetcore.mvc.razor.runtimecompilation.3.1.5.nupkg.sha512",

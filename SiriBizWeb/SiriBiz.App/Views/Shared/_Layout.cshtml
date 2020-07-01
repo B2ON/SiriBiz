@@ -1,4 +1,6 @@
-﻿@{
+﻿@inject IAuthenticationSchemeProvider SchemeProvider
+@using Microsoft.AspNetCore.Authentication
+@{
     var nav_style = ViewBag.NavStyle != null ? ViewBag.NavStyle as string : "navbar-floating navbar-dark";
 }
 <!DOCTYPE html>
@@ -12,7 +14,7 @@
     <link href="~/lib/tiny-slider/dist/tiny-slider.css" rel="stylesheet" />
     <link href="~/lib/lightgallery/css/lightgallery.min.css" rel="stylesheet" />
     <link href="~/lib/simplebar/dist/simplebar.css" rel="stylesheet" />
-    <link href="~/lib/siribiz-icon-1/siribiz.css" rel="stylesheet" />
+    <link href="~/lib/SiriBiz-v1.0/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/css/theme.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
@@ -67,7 +69,7 @@
                         </div>
                         <div class="modal-body px-4">
                             <p class="font-size-ms text-muted">Registration takes less than a minute but gives you full control over your orders.</p>
-                            <form class="needs-validation" asp-controller="Account" asp-action="SignUp" novalidate>
+                            <form class="needs-validation" asp-controller="Account" asp-action="SignUpface" novalidate>
                                 <div class="form-group">
                                     <input class="form-control" type="text" placeholder="Full name" required>
                                 </div>
@@ -93,7 +95,21 @@
                     </div>
                     <div class="modal-body text-center px-4 pt-2 pb-4">
                         <hr>
-                        <p class="font-size-sm font-weight-medium text-heading pt-4">Or sign in with</p><a class="social-btn sb-facebook sb-lg mx-1 mb-2" href="#"><i class="siribiz-facebook"></i></a><a class="social-btn sb-twitter sb-lg mx-1 mb-2" href="#"><i class="siribiz-twitter"></i></a><a class="social-btn sb-instagram sb-lg mx-1 mb-2" href="#"><i class="siribiz-instagram"></i></a><a class="social-btn sb-google sb-lg mx-1 mb-2" href="#"><i class="siribiz-google"></i></a>
+                        <p class="font-size-sm font-weight-medium text-heading pt-4">Or sign in with</p>
+                        @foreach (var provider in await SchemeProvider.GetRequestHandlerSchemesAsync())
+                        {
+                            <a class="social-btn sb-@provider.Name.ToLower() sb-lg mx-1 mb-2"
+                               asp-route-returnUrl="@Context.Request.Query["returnUrl"]"
+                               asp-route-provider="@provider.Name"
+                               asp-controller="Account"
+                               asp-action="SignIn">
+                                <i class="siribiz-@provider.Name.ToLower()"></i>
+                            </a>
+                        }
+                        @*<a class="social-btn sb-facebook sb-lg mx-1 mb-2" href="#"><i class="siribiz-facebook"></i></a>
+                            <a class="social-btn sb-twitter sb-lg mx-1 mb-2" href="#"><i class="siribiz-twitter"></i></a>
+                            <a class="social-btn sb-instagram sb-lg mx-1 mb-2" href="#"><i class="siribiz-instagram"></i></a>
+                            <a class="social-btn sb-google sb-lg mx-1 mb-2" href="#"><i class="siribiz-google"></i></a>*@
                     </div>
                 </div>
             </div>

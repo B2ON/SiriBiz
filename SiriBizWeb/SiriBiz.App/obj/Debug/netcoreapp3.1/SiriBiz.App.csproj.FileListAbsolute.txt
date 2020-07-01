@@ -397,9 +397,6 @@ C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\bin\De
 C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\obj\Debug\netcoreapp3.1\SiriBiz.App.csproj.CoreCompileInputs.cache
-C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\obj\Debug\netcoreapp3.1\SiriBiz.App.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\obj\Debug\netcoreapp3.1\SiriBiz.App.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\obj\Debug\netcoreapp3.1\Razor\Views\Home\ComingSoon.cshtml.g.cs
 C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
 C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
@@ -409,3 +406,10 @@ C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\obj\De
 C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Post.cshtml.g.cs
 C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\obj\Debug\netcoreapp3.1\Razor\Views\Home\Forgot.cshtml.g.cs
 C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\obj\Debug\netcoreapp3.1\Razor\Views\Account\SignIn.cshtml.g.cs
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Twitter.dll
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\obj\Debug\netcoreapp3.1\SiriBiz.App.csproj.CoreCompileInputs.cache
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\obj\Debug\netcoreapp3.1\SiriBiz.App.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\obj\Debug\netcoreapp3.1\SiriBiz.App.MvcApplicationPartsAssemblyInfo.cache

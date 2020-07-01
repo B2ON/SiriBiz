@@ -32,11 +32,36 @@ namespace SiriBiz.App
             services.AddScoped<IApplicationRepository, ApplicationRepository>();
 
             // Identity Config
-            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-            .AddCookie(cfg =>
+            services.AddAuthentication(options =>
             {
-                cfg.LoginPath = "/SignIn";
-            });
+                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            })
+            .AddFacebook(options =>
+             {
+                 options.AppId = Configuration["Authentication:Facebook:AppId"];
+                 options.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+             })
+            .AddGoogle(options =>
+            {
+                options.ClientId = Configuration["Authentication:Google:ClientId"];
+                options.ClientSecret = Configuration["Authentication:Google:ClientSecret"];
+            })
+            .AddTwitter(options =>
+            {
+                options.ConsumerKey = Configuration["Authentication:Twitter:ConsumerKey"];
+                options.ConsumerSecret = Configuration["Authentication:Twitter:ConsumerSecret"];
+            })
+            .AddMicrosoftAccount(options =>
+            {
+                options.ClientId = Configuration["Authentication:MicrosoftAccount:ClientId"];
+                options.ClientSecret = Configuration["Authentication:MicrosoftAccount:ClientSecret"];
+            })
+             .AddCookie(cfg =>
+             {
+                 cfg.LoginPath = "/SignIn";
+             });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
