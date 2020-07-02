@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SiriBiz.Core.IRepository;
@@ -27,9 +28,8 @@ namespace SiriBiz.App.Controllers
         [Route("Profile")]
         public IActionResult Profile()
         {
-            var identity = ((ClaimsIdentity)User.Identity);
+            var identity = User.Identity as ClaimsIdentity;
             var email_address = identity.FindFirst(ClaimTypes.Email)?.Value;
-
             var user_info = _repository.GetUserInfo(email: email_address);
             user_info.LoginType ??= identity.AuthenticationType;
             user_info.FirstName ??= identity.FindFirst(ClaimTypes.GivenName)?.Value;
@@ -64,8 +64,10 @@ namespace SiriBiz.App.Controllers
                         new Claim(ClaimTypes.NameIdentifier, $"{user.Email}@{user.UserName}"),
                         new Claim(ClaimTypes.Email, user.Email),
                         new Claim(ClaimTypes.Name, user.UserName),
-                        new Claim(ClaimTypes.Role,$"{(int)user.Role}"),
                     };
+
+                    //add role permission
+                    claims.AddRange(user.Roles.Select(role => new Claim(ClaimTypes.Role, role.ToString())));
 
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
@@ -86,7 +88,7 @@ namespace SiriBiz.App.Controllers
         [AllowAnonymous]
         public IActionResult SignIn(string provider, string returnUrl = null)
         {
-            return Challenge(new AuthenticationProperties { RedirectUri = returnUrl ?? "/", }, provider);
+            return Challenge(new AuthenticationProperties { RedirectUri = returnUrl ?? "\\", }, provider);
         }
 
         [HttpPost]

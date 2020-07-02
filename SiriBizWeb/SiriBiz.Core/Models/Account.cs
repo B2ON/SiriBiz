@@ -8,7 +8,7 @@ namespace SiriBiz.Core.Models
 {
     public class Account
     {
-        public eAccountRole Role { get; set; }
+        public eAccountRole[] Roles { get; set; }
         public string Profile { get; set; }
         public string LoginType { get; set; }
         public string Email { get; set; }

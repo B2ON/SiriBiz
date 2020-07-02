@@ -43,7 +43,7 @@ namespace SiriBiz.Core.Repository
                 UserName = email.Split('@').FirstOrDefault(),
                 ZipCode = "",
                 IsShowEmail = true,
-                Role = eAccountRole.Member
+                Roles = new[] { eAccountRole.Member, eAccountRole.Writer }
             };
         }
     }

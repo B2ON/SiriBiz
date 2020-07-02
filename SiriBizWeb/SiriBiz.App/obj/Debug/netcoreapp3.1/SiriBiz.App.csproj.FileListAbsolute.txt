@@ -413,3 +413,5 @@ C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\bin\De
 C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\obj\Debug\netcoreapp3.1\SiriBiz.App.csproj.CoreCompileInputs.cache
 C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\obj\Debug\netcoreapp3.1\SiriBiz.App.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\obj\Debug\netcoreapp3.1\SiriBiz.App.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\obj\Debug\netcoreapp3.1\Razor\Views\Writer\Index.cshtml.g.cs
+C:\Users\boontham\source\repos\boonthamgod\SiriBiz\SiriBizWeb\SiriBiz.App\obj\Debug\netcoreapp3.1\Razor\Views\Writer\Create.cshtml.g.cs

@@ -8,7 +8,8 @@ namespace SiriBiz.Core.Models
 {
     public enum eAccountRole
     {
-        Member = 0,// Level 1       
+        Member = 0,// Level 1  
+        Writer = 1,
         SuperUser = 98, //Heigh Level Member
         Administrator = 99 // Administrator
     }
